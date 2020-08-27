@@ -8,8 +8,8 @@ function getAllEntry() {
     for (let filename of paths) {
         let name = path.basename(filename, '.js');
         result[name] = path.resolve(mainPath, filename);
+        console.log(`${name} => ${result[name]}`);
     }
-    console.log(result);
     return result;
 }
 
@@ -26,6 +26,12 @@ module.exports = {
         hints: 'warning',
         maxEntrypointSize: 4000000,
         maxAssetSize: 2000000,
+    },
+    module: {
+        rules: [{
+            test: /\.js$/,
+            loader: 'babel-loader'
+        }],
     },
     devServer: {
         host: '0.0.0.0',

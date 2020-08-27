@@ -1,7 +1,7 @@
 {
   "name": "exert-three.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "exert three.js",
   "main": "index.js",
   "scripts": {
     "serve": "webpack-dev-server",
@@ -12,19 +12,30 @@
     "type": "git",
     "url": "git+https://github.com/chaosannals/exert-three.js.git"
   },
-  "author": "",
+  "author": {
+    "name": "chaosannals",
+    "email": "chaosannals@outlook.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chaosannals/exert-three.js/issues"
   },
   "homepage": "https://github.com/chaosannals/exert-three.js#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-classes": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/runtime-corejs3": "^7.11.2",
+    "babel-loader": "^8.1.0",
     "jest": "^26.4.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "core-js": "^3.6.5",
     "three": "^0.119.1"
   }
 }

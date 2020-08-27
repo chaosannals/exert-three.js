@@ -1,4 +1,4 @@
-const three = require('three')
+import * as three from 'three';
 
 const camera = new three.PerspectiveCamera(
     70,
