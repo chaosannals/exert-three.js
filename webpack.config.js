@@ -7,8 +7,11 @@ function getAllEntry() {
     const result = {};
     for (let filename of paths) {
         let name = path.basename(filename, '.js');
-        result[name] = path.resolve(mainPath, filename);
-        console.log(`${name} => ${result[name]}`);
+        let filepath = path.resolve(mainPath, filename);
+        if (fs.statSync(filepath).isFile()) {
+            console.log(`${name} => ${filepath}`);
+            result[name] = filepath;
+        }
     }
     return result;
 }
