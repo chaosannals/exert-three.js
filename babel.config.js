@@ -20,7 +20,8 @@ module.exports = {
                 },
                 useESModules: true,
             },
-        ], [
+        ],
+        [
             '@babel/plugin-proposal-class-properties', {
                 loose: false,
             },
