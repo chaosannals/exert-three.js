@@ -4,7 +4,7 @@ const camera = new three.PerspectiveCamera(
     70,
     window.innerWidth / window.innerHeight,
     0.01,
-    10
+    1000
 );
 camera.position.z = 1;
 const geometry = new three.BoxGeometry(0.2, 0.2, 0.2);
